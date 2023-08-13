@@ -9,9 +9,11 @@ const WorkingExperience = () => {
         width={'100%'}
         left={0}
         height={'100%'}
-        sx={{ backgroundColor: 'white' }}
-      >
-      </Box>
+        sx={{
+          backgroundColor: 'white',
+          zIndex: -1
+        }}
+      />
       <Container>
         <Typography >Working Experience</Typography>
         <Grid
@@ -19,26 +21,23 @@ const WorkingExperience = () => {
           paddingTop={'0.5rem'}
         >
           <Grid xs={12} md={3}>
-            <Typography>
-              Jan 2022 - Mar 2023
+
+            <Typography variant={'body1'} >
+              2022 - 2023
             </Typography>
           </Grid>
           <Grid xs={12} md={9}>
-            <Typography>Consilience Capital CA Corp.</Typography>
-            <Typography>
+
+            <Typography variant='h3'>
               Front End Developer
+              <Box sx={{ display: 'inline-block' }}>
+                <Typography variant='h3'>．Consilience Capital CA Corp.</Typography>
+              </Box>
             </Typography>
-            <List>
-              <ListItem>
-                <Typography>
-                  Developed an online platform for monitoring construction project lifecycle and assets which generated $10 million in cost savings and reduced field time by 88%.
-                </Typography>
-              </ListItem>
-            </List>
           </Grid>
           <Grid xs={12} md={3}>
             <Typography>
-              Aug 2020 – Dec 2021
+              2020 - 2021
             </Typography>
           </Grid>
           <Grid xs={12} md={9}>
@@ -56,7 +55,7 @@ const WorkingExperience = () => {
           </Grid>
           <Grid xs={12} md={3}>
             <Typography>
-              Jun. 2018 – Jul. 2019
+              2018 - 2019
             </Typography>
           </Grid>
           <Grid xs={12} md={9}>
@@ -74,6 +73,7 @@ const WorkingExperience = () => {
           </Grid>
         </Grid>
       </Container>
+
     </Box >
   )
 }
