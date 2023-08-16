@@ -1,5 +1,7 @@
 import Wave from "./Wave";
+import ExperienceGrid from "./ExperienceGrid";
 
 export {
-  Wave
+  Wave,
+  ExperienceGrid
 }
