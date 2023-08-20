@@ -6,6 +6,7 @@ import {
   Chip
 } from '@mui/material'
 import { Link } from 'gatsby'
+import { WorkingExperience } from 'src/type/WorkingExperience'
 
 const ExperienceGrid = ({
   time,
@@ -14,14 +15,7 @@ const ExperienceGrid = ({
   description,
   techs,
   link
-}: {
-  time: string
-  position: string
-  company: string
-  description: string
-  techs: string[]
-  link?: string
-}) => {
+}: WorkingExperience) => {
   return (
     <>
       <Grid xs={12} md={3}>

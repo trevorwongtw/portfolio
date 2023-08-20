@@ -5,7 +5,10 @@ import { workingExperiences } from '../data/workingExperiences'
 
 const WorkingExperience = () => {
   return (
-    <Box position={'relative'} >
+    <Box
+      position={'relative'}
+      paddingBottom={'2rem'}
+    >
       <Box
         position={'absolute'}
         width={'100%'}
