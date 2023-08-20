@@ -5,19 +5,22 @@ import {
   Typography,
   Chip
 } from '@mui/material'
+import { Link } from 'gatsby'
 
 const ExperienceGrid = ({
   time,
   position,
   company,
   description,
-  techs
+  techs,
+  link
 }: {
   time: string
   position: string
   company: string
   description: string
   techs: string[]
+  link?: string
 }) => {
   return (
     <>
@@ -38,11 +41,25 @@ const ExperienceGrid = ({
         >
           {position}．
           <Box display={'inline-block'}>
-            <Typography
-              color={'#465282'}
-              fontSize={'1.25rem'}
-              fontWeight={'bold'}
-            >{company}</Typography>
+            {
+              link !== undefined ? <a
+                href={link}
+                target="_blank"
+                style={{ textDecoration: 'none' }}
+              >
+                <Typography
+                  color={'#465282'}
+                  fontSize={'1.25rem'}
+                  fontWeight={'bold'}
+                >{company}</Typography>
+              </a> :
+                <Typography
+                  color={'#465282'}
+                  fontSize={'1.25rem'}
+                  fontWeight={'bold'}
+                >{company}</Typography>
+            }
+
           </Box>
         </Typography>
         <Typography
