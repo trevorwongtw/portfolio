@@ -13,31 +13,33 @@ const Bottom = () => {
     // sx={{ backgroundColor: 'white' }}
     >
       <Container>
-        <Typography
-          fontSize={'2rem'}
-          color={'#465282'}
-          fontWeight={900}
-        >
-          Contact
-        </Typography>
-        <ContactRow
-          icon={<MailIcon style={{ width: '2rem', height: '2rem' }} />}
-          content={<Typography color={'#465282'}>
-            yufungtrevor.wong@gmail.com
-          </Typography>}
-        />
-        <ContactRow
-          icon={<GitIcon style={{ width: '2rem', height: '2rem' }} />}
-          content={
-            <a href='https://github.com/trevorwongtw'>
-              https://github.com/trevorwongtw
-            </a>
-          }
-        />
+        <Box marginLeft={'2rem'}>
+          <Typography
+            fontSize={'2rem'}
+            color={'#465282'}
+            fontWeight={900}
+          >
+            Contact
+          </Typography>
+          <ContactRow
+            icon={<MailIcon style={{ width: '2rem', height: '2rem' }} />}
+            content={<Typography color={'#465282'}>
+              yufungtrevor.wong@gmail.com
+            </Typography>}
+          />
+          <ContactRow
+            icon={<GitIcon style={{ width: '2rem', height: '2rem' }} />}
+            content={
+              <a href='https://github.com/trevorwongtw'>
+                https://github.com/trevorwongtw
+              </a>
+            }
+          />
+        </Box>
       </Container>
       <Box
         position={'absolute'}
-        width={'95%'}
+        width={'calc(100% - 2rem)'}
         height={'calc(100% + 2rem)'}
         top={'-2rem'}
         right={'0'}

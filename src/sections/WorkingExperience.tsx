@@ -7,7 +7,6 @@ const WorkingExperience = () => {
   return (
     <Box
       position={'relative'}
-      paddingBottom={'2rem'}
     >
       <Box
         position={'absolute'}
