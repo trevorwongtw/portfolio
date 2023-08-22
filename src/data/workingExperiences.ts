@@ -1,4 +1,3 @@
-// @ts-ignore
 import { WorkingExperience } from "src/type/WorkingExperience";
 
 export const workingExperiences: WorkingExperience[] = [

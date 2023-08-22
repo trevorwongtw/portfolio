@@ -18,7 +18,7 @@ export default function HTML(props) {
         style={{
           margin: 0,
           fontFamily: 'sans-serif',
-          backgroundColor: 'rgb(22,28,62)'
+          // backgroundColor: 'rgb(22,28,62)'
         }}
       >
         {props.preBodyComponents}

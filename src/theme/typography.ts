@@ -1,6 +1,6 @@
 const typography = {
   fontFamily: 'sans-serif',
-  color: 'white',
+  // color: 'white',
   h1: {
     
     fontSize: '3rem',
