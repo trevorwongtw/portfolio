@@ -7,7 +7,11 @@ const ProjectGrid = ({ imgSrc, title }: {
   title: string
 }) => {
   return (
-    <Box>
+    <Box
+      display={'flex'}
+      gap={'1rem'}
+      flexWrap={'wrap'}
+    >
       <img
         src={imgSrc}
         style={{

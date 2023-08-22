@@ -38,5 +38,10 @@
     "@types/three": "^0.154.0",
     "gatsby-plugin-root-import": "^2.0.9",
     "typescript": "^5.1.6"
+  },
+  "overrides": {
+    "babel-plugin-lodash": {
+      "@babel/types": "~7.20.0"
+    }
   }
 }
