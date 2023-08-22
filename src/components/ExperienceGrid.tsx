@@ -7,6 +7,7 @@ import {
 } from '@mui/material'
 import { Link } from 'gatsby'
 import { WorkingExperience } from 'src/type/WorkingExperience'
+import TechChip from './TechChip'
 
 const ExperienceGrid = ({
   time,
@@ -53,7 +54,6 @@ const ExperienceGrid = ({
                   fontWeight={'bold'}
                 >{company}</Typography>
             }
-
           </Box>
         </Typography>
         <Typography
@@ -65,15 +65,7 @@ const ExperienceGrid = ({
           {description}
         </Typography>
         {
-          techs.map(item => <Chip
-            sx={{
-              marginTop: '0.5rem',
-              marginRight: '0.5rem'
-            }}
-            label={item}
-            variant="outlined"
-            color='primary'
-          />)
+          techs.map(item => <TechChip item={item} />)
         }
       </Grid>
     </>

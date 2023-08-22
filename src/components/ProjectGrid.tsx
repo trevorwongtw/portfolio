@@ -1,11 +1,9 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-// import ngoWebsite from 'src/images/ngoWebsite.png'
+import TechChip from './TechChip'
+import { Project } from '../type/Project'
 
-const ProjectGrid = ({ imgSrc, title }: {
-  imgSrc: string,
-  title: string
-}) => {
+const ProjectGrid = ({ imgSrc, title, content, techs }: Project) => {
   return (
     <Box
       display={'flex'}
@@ -19,11 +17,21 @@ const ProjectGrid = ({ imgSrc, title }: {
           width: '20rem'
         }}
       />
-      <Typography
-        color={'#465282'}
-        fontSize={'1.25rem'}
-        fontWeight={'bold'}
-      >{title}</Typography>
+      <Box>
+        <Typography
+          color={'#465282'}
+          fontSize={'1.25rem'}
+          fontWeight={'bold'}
+        >{title}</Typography>
+        <Typography
+          lineHeight={1.4}
+          marginTop={'0.5rem'}
+          color={'#465282'}
+        >
+          {content}
+        </Typography>
+        {techs.map(item => <TechChip item={item} />)}
+      </Box>
     </Box>
   )
 }

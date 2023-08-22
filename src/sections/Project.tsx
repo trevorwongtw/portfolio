@@ -1,14 +1,7 @@
 import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
 import { ProjectGrid } from '../components'
-import ngoWebsite from 'src/images/ngoWebsite.png'
-
-const featuredProjects = [
-  {
-    imgSrc: ngoWebsite,
-    title: 'Website of a NGO in Hong Kong'
-  }
-]
+import { featuredProjects } from '../data'
 
 const Project = () => {
   return (
