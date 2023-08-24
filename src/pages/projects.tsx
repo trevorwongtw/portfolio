@@ -11,21 +11,46 @@ import {
   Container,
   Typography
 } from '@mui/material'
+//@ts-ignore
+import { ReactComponent as VectorIcon } from 'src/icons/vector.svg'
+import { Link } from 'gatsby'
 
 const Projects = () => {
   return (
     <Box
-      marginBottom={'3rem'}
+      paddingTop={'3rem'}
+      paddingBottom={'3rem'}
     >
       <Container>
+        <Link
+          to={'/'}
+          style={{ textDecoration: 'none' }}
+        >
+          <Box
+            display={'flex'}
+            gap={'0.5rem'}
+            alignItems={'flex-start'}
+          >
+            <Box sx={{ transform: 'rotate(180deg)' }}>
+              <VectorIcon
+                fill={'#465282'}
+                width={'1rem'}
+                height={'1rem'}
+              />
+            </Box>
+            <Typography
+              color={'#465282'}
+              sx={{ userSelect: 'none' }}
+            >
+              back
+            </Typography>
+          </Box>
+        </Link>
         <Typography
           color={'#465282'}
           fontSize={'3rem'}
           fontWeight={'bold'}
-          sx={{
-            marginTop: '5rem',
-            marginBottom: '1rem'
-          }}
+          marginBottom={'1rem'}
         >
           All Projects
         </Typography>

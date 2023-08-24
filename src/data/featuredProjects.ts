@@ -15,7 +15,7 @@ export const featuredProjects: FeaturedProject[] = [
     imgSrc: motex,
     title: 'Introduction website of Motex',
     link: 'https://motex.io',
-    content: 'I built this interactive website to introduce the product for company.',
+    content: 'It\'s an interactive website built to promote a product for the company. It was integrated with the scrolling effect. When customer received our leaflet, there was an QR code. Once our customer scanned the QR code, it went to the website and automatically scrolled to the section that related to the leaflet.',
     techs: ['ReactJs', 'GatsbyJs']
   },
   {

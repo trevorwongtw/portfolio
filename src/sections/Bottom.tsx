@@ -7,13 +7,28 @@ import { ContactRow } from 'src/components'
 const Bottom = () => {
   return (
     <Box
-      paddingTop={'3rem'}
+      marginTop={'2rem'}
       paddingBottom={'4rem'}
       position={'relative'}
-    // sx={{ backgroundColor: 'white' }}
+      sx={{ backgroundColor: '#465282' }}
     >
+      <Box
+        position={'absolute'}
+        width={'calc(100% - 2rem)'}
+        height={'calc(100% + 2rem)'}
+        top={'-2rem'}
+        right={'0'}
+        sx={{
+          backgroundColor: '#81d2c7',
+          zIndex: '1'
+        }}
+      />
       <Container>
-        <Box marginLeft={'2rem'}>
+        <Box
+          marginLeft={'2rem'}
+          position={'relative'}
+          sx={{ zIndex: '3' }}
+        >
           <Typography
             fontSize={'2rem'}
             color={'#465282'}
@@ -37,17 +52,7 @@ const Bottom = () => {
           />
         </Box>
       </Container>
-      <Box
-        position={'absolute'}
-        width={'calc(100% - 2rem)'}
-        height={'calc(100% + 2rem)'}
-        top={'-2rem'}
-        right={'0'}
-        sx={{
-          backgroundColor: '#81d2c7',
-          zIndex: '-1'
-        }}
-      />
+
     </Box>
   )
 }
