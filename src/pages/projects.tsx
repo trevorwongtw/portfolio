@@ -8,14 +8,27 @@ import {
   TableCell,
   TableRow,
   TableBody,
-  Container
+  Container,
+  Typography
 } from '@mui/material'
-
 
 const Projects = () => {
   return (
-    <Box>
+    <Box
+      marginBottom={'3rem'}
+    >
       <Container>
+        <Typography
+          color={'#465282'}
+          fontSize={'3rem'}
+          fontWeight={'bold'}
+          sx={{
+            marginTop: '5rem',
+            marginBottom: '1rem'
+          }}
+        >
+          All Projects
+        </Typography>
         <Table>
           <TableHead>
             <TableRow>
@@ -42,8 +55,7 @@ const Projects = () => {
                 </TableCell>
                 <TableCell align="left">
                   {
-                    item.linkObj?.diaplay &&
-                    item.linkObj?.url &&
+                    item.linkObj &&
                     <a href={item.linkObj.url}>
                       {item.linkObj.display}
                     </a>

@@ -32,7 +32,7 @@ const Project = () => {
             gap={'0.5rem'}
             alignItems={'center'}
           >
-            <Typography > This is a link </Typography>
+            <Typography >All my Previous Projects</Typography>
             <VectorIcon fill={'#465282'} width={'1rem'} height={'1rem'} />
           </Box>
         </Link>
