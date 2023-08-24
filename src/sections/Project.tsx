@@ -3,6 +3,7 @@ import React from 'react'
 import { ProjectGrid } from '../components'
 import { featuredProjects } from '../data'
 import { Link } from 'gatsby'
+//@ts-ignore
 import { ReactComponent as VectorIcon } from 'src/icons/vector.svg'
 
 const Project = () => {
@@ -32,7 +33,7 @@ const Project = () => {
             gap={'0.5rem'}
             alignItems={'center'}
           >
-            <Typography >All my Previous Projects</Typography>
+            <Typography >All My Previous Projects</Typography>
             <VectorIcon fill={'#465282'} width={'1rem'} height={'1rem'} />
           </Box>
         </Link>

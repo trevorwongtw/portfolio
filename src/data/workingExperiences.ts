@@ -6,7 +6,7 @@ export const workingExperiences: WorkingExperience[] = [
     position: 'Front End Developer',
     company: 'Consilience Capital CA Corp.',
     description: 'Developed an online platform for monitoring construction project lifecycle and assets which generated $10 million in cost savings and reduced field time by 88%.',
-    techs: ['React', 'TypeScript', 'Redux', 'Redux-saga', 'VueJs', 'VueJs', 'Styled Component'],
+    techs: ['React', 'TypeScript', 'Redux', 'Redux-saga', 'VueJs', 'VueJs', 'Styled Component', 'Storybook'],
     link: 'https://www.consilienceanalytics.com/'
   },
   {
@@ -14,7 +14,7 @@ export const workingExperiences: WorkingExperience[] = [
     position: 'Software Developer',
     company: 'Instelar Limited',
     description: 'Developed an online drawing management system with version controls using ReactJS which significantly reduced the architects’ workloads by 80% and streamlined blueprint design operations.',
-    techs: ['React', 'TypeScript', 'Redux', 'SwiftUI', 'Kotlin', 'JetPack Compose', 'SCSS'],
+    techs: ['React', 'TypeScript', 'Redux', 'SwiftUI', 'Kotlin', 'JetPack Compose', 'SCSS', 'Storybook'],
     link: 'https://www.instelar.com/en/'
   },
   {
