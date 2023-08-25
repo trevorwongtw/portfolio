@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useMemo, useCallback } from "react"
+import { useMemo, useCallback, Suspense } from "react"
 
 import * as THREE from 'three'
 import { Canvas, useFrame, useLoader } from "react-three-fiber"
@@ -84,11 +84,15 @@ const Points = () => {
 
 const Wave = () => {
   return (
-    <Canvas
-      camera={{ position: [100, 10, 0], fov: 75 }}
+    <Suspense
+      fallback={<>loading</>}
     >
-      <Points />
-    </Canvas>
+      <Canvas
+        camera={{ position: [100, 10, 0], fov: 75 }}
+      >
+        <Points />
+      </Canvas>
+    </Suspense>
   )
 }
 
